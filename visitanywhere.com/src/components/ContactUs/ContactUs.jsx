@@ -61,7 +61,7 @@ export default function Contact() {
                   />
                 </svg>
                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                  +44 1234567890
+                  +44 12345637773
                 </div>
               </div>
 
