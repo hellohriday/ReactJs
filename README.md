@@ -1,10 +1,7 @@
 # ReactJs
 
-<<<<<<< HEAD
-# my first project<button>
+# my first project<button>.
 
-=======
-my first project <dropdown>
->>>>>>> main
+my first project.
 <br>
 Author : hriday
