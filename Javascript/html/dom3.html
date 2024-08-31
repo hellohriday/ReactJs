@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul class="language">
+    <li>javascript</li>
+    <li>C++</li>
+    <li>C#</li>
+  </ul>
+</body>
+<script>
+  //add
+  function addlanguage(language){
+    const newliNode=document.createElement('li');
+    newliNode.appendChild(document.createTextNode(`${language}`));
+    document.querySelector('.language').appendChild(newliNode);
+    // document.body.ge.appendChild()
+  }
+  addlanguage("java");
+
+  //edit
+
+  const secondnode=document.querySelector('li:nth-child(2)');
+  console.log(secondnode);
+  const updatednode=document.createElement('li');
+  //updatednode.innerHTML="mojo";
+  updatednode.textContent="spring";
+  console.log(updatednode)
+  secondnode.replaceWith(updatednode);
+  const firstnode=document.querySelector('li:nth-child(1)');
+  console.log(firstnode);
+  firstnode.outerHTML="<li>python</li>";
+
+
+  // function editlanguage(oldLang,newLang){
+  //   const updateliNode=document.createElement('li');
+  //   updateliNode.appendChild(document.createTextNode(`${newLang}`));
+  //   const allNodes=Array.from(document.querySelector('.language').children);
+  //   allNodes.forEach((item)=>{
+  //      item.childNodes[0].nodeValue===oldLang?item.childNodes[0].nodeValue=newLang:"";
+  //   })
+  //   // document.body.ge.appendChild()
+  // }
+  // editlanguage("java","jave-spring");
+
+
+  // remove
+
+  const removeItemselect=document.querySelector('li:last-child');
+  console.log(removeItemselect);
+  removeItemselect.remove()
+   
+</script>
+</html>

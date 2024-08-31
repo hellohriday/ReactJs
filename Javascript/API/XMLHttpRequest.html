@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API calling</title>
+</head>
+<body>
+  
+</body>
+<script>
+  const URL="https://api.github.com/users";
+  const _httpRequest=new XMLHttpRequest();
+  _httpRequest.open("GET",URL);
+  _httpRequest.onreadystatechange=function(){
+    console.log(_httpRequest.readyState);
+    if(_httpRequest.readyState===4){
+      const data=JSON.parse(_httpRequest.responseText);
+      console.log(data)
+    }
+  }
+  _httpRequest.send();
+
+
+
+</script>
+</html>

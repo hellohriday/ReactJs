@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Chai aur Code</h1>
+  <button id="stop">Stop</button>
+</body>
+<script>
+  // setInterval
+  // It start execution continuously after the given time until clearInterval envoked
+
+  const IntervalId=setInterval(function(){
+    console.log("i am hriday",Date.now());
+  },1000)
+  
+  
+  document.querySelector('#stop').addEventListener('click',function(){
+    console.log('stopped clicked')
+  clearInterval(IntervalId);
+  },false);
+
+</script>
+</html>
